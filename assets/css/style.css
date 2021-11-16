@@ -1,18 +1,32 @@
+a {
+    color: #3a4961;
+    text-decoration: none;
+}
+
+a:visited, a:hover, a:focus, a:hover, a:active{
+    text-decoration: none;
+    color: white;
+}
+
 .flex-container {
     display: flex;
-    background-color: limegreen;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    background-color: #3a4961;
     margin: 20px;
 }
 
 .flex-container h1 {
     margin: 20px 20px 20px 80px;
+    background-color: #52a8bf;
     padding: 10px;
     font-size: 2em;
+    color: #3a4961;
 }
 
 .flex-container ul {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     margin-left: 470px;
     padding: 5px;
     align-items: center;
@@ -21,16 +35,41 @@
 .flex-container ul li {
     margin: 15px;
     padding: 5px;
+    font-size: larger;
+    color: #3a4961
 }
+
 
 .info-box {
     display: flex;
-    background-color: red;
     margin: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+footer.info-box {
+    margin: 20px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.info-box ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 470px;
+    padding: 5px;
     align-items: center;
 }
 
-section h2 {
+.info-box ul li {
+    margin: 15px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+section h2,  footer h2 {
     margin-left: 80px;
     border-right: 2px solid black;
     padding: 10px;
@@ -46,29 +85,28 @@ section p {
 .flex-row {
     display: flex;
     flex-flow: row wrap;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin: 20px;
 }
 
 .img-column {
     display: flex;
-    align-items: center;
-    flex: 1 0 100%;
+    flex-flow: row wrap;
     /* when the screen resizes, make it so our columns don't jump in size */
     transition: flex-basis 500ms linear;
     margin-bottom: 1.5rem;
     max-width: 100px;
-    max-height: 100px;
 }
 
 
 .img-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-height: 100%;
+    flex: 1 0 100%;
     padding: 0px 5px 5px 5px;
     transition: all 0.5s ease-in-out;
+}
+
+.img-card:first-child {
+    opacity: 60%;
+    flex-grow: 3;
 }
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
