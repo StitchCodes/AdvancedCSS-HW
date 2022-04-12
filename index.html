@@ -1,85 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINKS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/6.1.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/vars.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Portfolio - Miguel S</title>
 </head>
+
 <body>
     <!-- Header -->
     <header class="flex-container">
-        <H1>Miguel Santamaria</H1>
-
-        <ul>
-            <li class="">
-                <a href="#aboutme">About Me</a>
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-                <a href="#contactme">Contact Me</a>
-            </li>
-            <li>
-                <a href="#">Resume</a>
-            </li>
-        </ul>
+        <nav class="nav">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About Me </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-
-
-    <!-- Main Content -->
+    <!-- Banner -->
+    <section class="banner">
+        <H1 class="banner__p">Miguel Santamaria</H1>
+    </section>
+    <!-- Main Body -->
     <main>
         <!-- About Me -->
-        <section class="info-box"> 
-            <h2 id="aboutme">About Me</h2>
+        <section class="aboutMe">
+            <div class="info-box">
+                <a href="#work" class="button large scroll azul">About Me</a>
+            </div>
 
-            <p>I'm Miguel Santamaria from Mexico City! I like to code and wish I can be a pro coder one day! I have background as photographer and a bit of other media designs like video and photo edit. I love motorcylces and like to spend my free time on the road.</p>
+            <div class="container">
+                <p class="container__p">From Mexico City! I like to code and wish I can be a pro coder one day! I have
+                    background as photographer and a bit of other media designs like video and photo edit. I love
+                    motorcylces and like to spend my free time on the road.</p>
+            </div>
         </section>
-
         <!-- Work Section -->
-        <section class="flex-row">
-            <div id="work">
-                <h2>Work</h2>
-            </div>
+        <section class="work">
+            <h3 id="aboutMe"><a href="#work">Work...</a></h3>
+            <p class="aboutme1">Here's some stuff I made recently..</p>
 
-            <div class="img-column">
-                <figure class="img-card">
-                    <img src="https://placekitten.com/g/1010/400" alt="Imageholder">
-                </figure>
+            <div class="cards-list">
+                <!-- Hunger Managment Project Link -->
+                <div class="card1">
+                    <div class="card_image"> <img src="./assets/img/hmmgmt.jpeg" /> </div>
+                    <div class="card_title title-white">
+                        <p> <a href="https://stitchcodes.github.io/hunger-managment/"> Hunger Managment Proyect </a></p>
+                    </div>
+                </div>
 
-                <figure class="img-card">
-                    <img src="https://placekitten.com/g/550/300" alt="Imageholder">
-                </figure>
+                <!-- Hunger Managment Project Link -->
+                <div class="card1">
+                    <div class="card_image"> <img src="./assets/img/mc-club.jpg" /> </div>
+                    <div class="card_title title-white">
+                        <p> <a href="https://stitchcodes.github.io/hunger-managment/"> Hunger Managment Proyect </a></p>
+                    </div>
+                </div>
 
-                <figure class="img-card">
-                    <img src="https://placekitten.com/g/550/300" alt="Imageholder">
-                </figure>
-            </div>
-
-            <!-- <img src="https://placekitten.com/g/100/100" alt=""> -->
+                <!-- MC Project Link -->
+                <div class="card1">
+                    <div class="card_image"> <img src="http://placekitten.com/g/200/300" /> </div>
+                    <div class="card_title title-white">
+                        <p> <a href="#"> Hunger Managment Proyect </a></p>
+                    </div>
+                </div>
         </section>
 
-        <!-- Contact Info -->
-        <footer class="info-box">
-            <h2>Contact Me</h2>
-    
-            <ul>
-                <li>55-4992-2191</li>
-                <li>
-                    <a href="github.com">Github</a>
-                </li>
-                <li>coderstitch@gmail.com</li>
-                
-            </ul>
-        </header>
+        <section class="mainPrincial1">
+            <h2 class="main1__p">Here's all the stuff I do.</h2>
+            <p class="main1__p2"> Odio turpis amet sed consequat eget posuere consequat.</p>
 
+        </section>
+        <div class="main1">
+            <ul class="cards2">
+                <li class="cards2_item">
+                    <div class="card3">
+                        <div class="card2_image"><img src="http://placekitten.com/g/500/300"></div>
+                        <div class="card2_content">
+                            <h2 class="card2_title">Card Grid Layout</h2>
+                            <p class="card2_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cards2_item">
+                    <div class="card3">
+                        <div class="card2_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                        <div class="card2_content">
+                            <h2 class="card2_title">Card Grid Layout</h2>
+                            <p class="card2_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cards2_item">
+                    <div class="card3">
+                        <div class="card2_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                        <div class="card2_content">
+                            <h2 class="card2_title">Card Grid Layout</h2>
+                            <p class="card2_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cards2_item">
+                    <div class="card3">
+                        <div class="card2_image"><img src="http://placekitten.com/g/500/300"></div>
+                        <div class="card2_content">
+                            <h2 class="card2_title">Card Grid Layout</h2>
+                            <p class="card2_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <!--   Contact Info --->
+        <section class="contacto">
+            <div class="info-box">
+                <a href="#work" class="button large scroll azul"> Get in touch with me </a>
+            </div>
+
+            <div data-aos="fade-right">
+                <h3 class="contacto__p">
+                    Get in touch..
+                </h3>
+
+                <h4 class="contacto__p2">
+                    If you wanna get in touch, talk to me about a project collaboration or just say hi,
+                    feel free to send a mail to: <br>
+                    coderstitch@gmail.com
+                    and ~let's talk. </h4>
+            </div>
+
+            <div class="contacto2">
+                <h4> Let's get social</h4>
+                <div data-aos="fade-left">
+                    <p class="contacto2__p">
+                        Follow my profiles on: LinkedIn and Github
+                    </p>
+
+                    <a href="https://github.com/StitchCodes" class="boton7 azul">Github</a>
+                    <a href="https://www.linkedin.com/in/miguel-santamaria-93157378/" class="boton7 azul">Linkedin</a>
+                    <a href="#" class="boton7 negro">Holder</a>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i>
+                    <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="#about">About me</a>
+
+                    <a href="#work">Work </a>
+
+                    <a href="#contact">Contact Me </a>
+
+                    <a href="#resume">Resume</a>
+
+
+                </p>
+
+                <p>Holder &copy; 2022</p>
+            </div>
+
+        </footer>
 
     </main>
+
+    <script src="https://kit.fontawesome.com/c8ee3dd930.js"></script>
 </body>
+
 </html>
